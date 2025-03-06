@@ -15,7 +15,7 @@ struct Loading : View {
     @State private var currentIndex = 0
     
     var body: some View {
-        HStack(spacing: 0) {
+        HStack(spacing: 4) {
             ForEach(Array(characters.enumerated()), id: \.offset) { index, char in
                 Text(String(char))
                     .font(.largeTitle)
